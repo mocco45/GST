@@ -9741,7 +9741,8 @@ textarea {
     min-height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; }
+    background-position: top center;
+   }
     .hero-slide .img.overlay {
       position: relative; }
       .hero-slide .img.overlay:before {
@@ -9810,7 +9811,7 @@ textarea {
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   .btn.btn-primary {
-    background: #005555;
+    background: #00204a;
     color: #fff; }
   .btn:hover {
     top: -2px;

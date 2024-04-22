@@ -16,7 +16,7 @@
         class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
       >
         <li class="active"><a href="index.html">Home</a></li>
-        <li class="has-children">
+        {{-- <li class="has-children">
           <a href="properties.html">Properties</a>
           <ul class="dropdown">
             <li><a href="#">Buy Property</a></li>
@@ -31,10 +31,11 @@
               </ul>
             </li>
           </ul>
-        </li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        </li> --}}
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#staff">Staff</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         <li><a href="{{ route('login') }}">admin</a></li>
       </ul>
 
@@ -77,11 +78,11 @@
   </div>
 
   {{-- <div class=""></div> --}}
-  <div class="section-0">
+  <div class="section-0" id="popular">
     <div class="container">
       <div class="row mb-2 align-items-center">
         <div class="col-lg-6">
-          <h2 class="font-weight-bold text-primary heading">
+          <h2 class="font-weight-bold heading" style="color: #00204a">
             Popular Books
           </h2>
           {{-- <span class="h1">{{ $post }}</span> --}}
@@ -103,27 +104,15 @@
             <div class="property-slider">
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/gst1.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
-                  <div>
+                  <div class="price mb-2"><span>Summary Report 1925</span></div>
+                  <div style="margin-top: 44px;">
                     <span class="d-block mb-2 text-black-50"
-                      >5232 California Fake, Ave. 21BC</span
+                      >by Edward Linkolin</span
                     >
-                    <span class="city d-block mb-3">California, USA</span>
-
-                    <div class="specs d-flex mb-4">
-                      <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
-                      </span>
-                      <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
-                      </span>
-                    </div>
 
                     <a
                       href="property-single.html"
@@ -137,27 +126,15 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/gst2.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>Geological Survey of Belgium</span></div>
                   <div>
                     <span class="d-block mb-2 text-black-50"
-                      >5232 California Fake, Ave. 21BC</span
+                      >by Kris Welkenhuysen</span
                     >
-                    <span class="city d-block mb-3">California, USA</span>
-
-                    <div class="specs d-flex mb-4">
-                      <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
-                      </span>
-                      <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
-                      </span>
-                    </div>
 
                     <a
                       href="property-single.html"
@@ -171,27 +148,15 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/gst3.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
-                  <div>
+                  <div class="price mb-2"><span>Ground Truth</span></div>
+                  <div style="margin-top: 45px;">
                     <span class="d-block mb-2 text-black-50"
-                      >5232 California Fake, Ave. 21BC</span
+                      >by Ruby MCConel</span
                     >
-                    <span class="city d-block mb-3">California, USA</span>
-
-                    <div class="specs d-flex mb-4">
-                      <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
-                      </span>
-                      <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
-                      </span>
-                    </div>
 
                     <a
                       href="property-single.html"
@@ -205,31 +170,19 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/gst4.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>The Tertiary History Of Grand Canon</span></div>
                   <div>
                     <span class="d-block mb-2 text-black-50"
-                      >5232 California Fake, Ave. 21BC</span
+                      >by Dutton</span
                     >
-                    <span class="city d-block mb-3">California, USA</span>
-
-                    <div class="specs d-flex mb-4">
-                      <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
-                      </span>
-                      <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
-                      </span>
-                    </div>
 
                     <a
                       href="property-single.html"
-                      class="btn btn-primary py-2 px-3"
+                      class="btn btn-primary py-2 px-3" 
                       >See details</a
                     >
                   </div>
@@ -237,7 +190,7 @@
               </div>
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
                 </a>
@@ -268,10 +221,10 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
                 </a>
@@ -302,10 +255,10 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
                 </a>
@@ -336,10 +289,10 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
                 </a>
@@ -370,10 +323,10 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
 
-              <div class="property-item">
+              {{-- <div class="property-item">
                 <a href="property-single.html" class="img">
                   <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
                 </a>
@@ -404,7 +357,7 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <!-- .item -->
             </div>
 
@@ -436,11 +389,11 @@
     </div>
   </div>
 
-  <div class="section section-5 bg-light">
+  <div class="section section-5 bg-light" id="staff">
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-6 mb-5">
-          <h2 class="font-weight-bold heading text-primary mb-4">
+          <h2 class="font-weight-bold heading mb-4" style="color: #00204a">
             Staff Team 
           </h2>
         </div>
@@ -450,7 +403,7 @@
         <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mt-5 mb-lg-0">
           <div class="h-100 person">
             <img
-              src="{{ asset('storage/images/staff/'.$list->photo) }}"
+              src="{{ $list->photo != NULL ? asset('storage/images/staff/'.$list->photo) : asset('assets/img/demo/user-placeholder.svg') }}"
               alt="Image"
               class="img-fluid"
             />
@@ -458,11 +411,6 @@
             <div class="person-contents">
               <h2 class="mb-0"><a href="#">{{ $list->name }}</a></h2>
               <span class="meta d-block mb-3">{{ $list->title }}</span>
-              {{-- <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Facere officiis inventore cumque tenetur laboriosam, minus
-                culpa doloremque odio, neque molestias?
-              </p> --}}
 
               <ul class="social list-unstyled list-inline dark-hover">
                 <li class="list-inline-item">
@@ -484,12 +432,48 @@
         @endforeach
       </div>
     </div>
-  </div>
-  <div class="section section-4 bg-light">
+  </div> <div class="section section-4 bg-light" id="about">
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-5">
-          <h2 class="font-weight-bold heading text-primary mb-4">
+          <h2 class="font-weight-bold heading mb-4" style="color: #00204a">
+            About Us
+          </h2>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+              <div>             
+                  <h5>Brief history of Geological Survey of Tanzania Library</h5>
+      
+                  <p>The Geological Survey of Tanzania (GST) is an institution within the Ministry of Minerals was established as a Geological Survey Department (GSD) in 1925 by the colonial government for the purpose of executing mineral exploration activities in the country.</p>
+                  <p>GST underwent different structural changes, whereby in 2005 GSD was elevated into a government executive agency and later in 2017 into autonomous government entity.</p>
+
+                  <h5>The Geological Survey Library </h5>
+      
+                  <p>The Geological Survey of Tanzania Library in Dodoma which started in 1928 has such a comprehensive collection of approximately 4,000 published documents dealing with a wide variety of geological, geophysical, geochemical, geotechnical topics including international journals.</p>
+                  <p>GST possesses a geological and mineral database which is virtually complete for work done since the mid 1930s and therefore is a major asset in the evaluation of the country’s mineral resources.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div>
+                  <h5>Core and rock Library</h5>
+      
+                  <p>Four warehouses are maintained in Dodoma with core and chip samples from drilling programmers’ carried out during the proceeding decades of exploration work. The Rock library is at the Tanzania Geological Survey in Dodoma, while the core warehouses are located at the Kizota industrial area in Dodoma city. The core warehouses that store thousands of meters of core from nearly 1,000 geological and exploration projects.</p>
+                
+                  <h5 style="margin-top: 65px">Archives</h5>
+      
+                  <p>The Archives at Dodoma contain a wealth of information from geological survey work,   company programs, co-operative inter-government projects and other sources. Approximately 6,000 documents are on file, ranging from single page to multivolume project reports. Professional staff are there to help searchers. </p>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section-4 bg-light" id="contact">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-5">
+          <h2 class="font-weight-bold heading mb-4" style="color: #00204a">
             Contact Us
           </h2>
           {{-- <p class="text-black-50">
@@ -547,6 +531,8 @@
       </div>
     </div>
   </div>
+
+ 
 
   <div class="site-footer">
     <div class="container">
